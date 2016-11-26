@@ -6,14 +6,16 @@ require dirname(__FILE__).'/timberslide.php';
 class Timberslide {
     private $token = '';
     private $topic = '';
-    private $host = 'gw.timberslide.com:443';
+    private $host = '';
     private $ingestClient;
     private $streamer;
 
-    function __construct($topic, $token) {
+    function __construct($topic, $token, $host='gw.timberslide.com:443') {
         // Set up
         $this->token = $token;
         $this->topic = $topic;
+        $this->host = $host;
+        echo "$this->token $this->topic $this->host\n";
         $channel_credentials = Grpc\ChannelCredentials::createComposite(
             Grpc\ChannelCredentials::createSsl(null),
             Grpc\CallCredentials::createFromPlugin(array($this, 'authCallback'))
@@ -26,15 +28,13 @@ class Timberslide {
     }
 
     function __destruct() {
-        // not yet implemented
-        echo "In destructor\n";
-        $this->streamerClient->close();
-        echo "Goodbye\n";
+        // XXX check if it's open before closing?
+        $this->ingestClient->close();
     }
 
     function close() {
         // When we want to close our connection to Timberslide
-        $this->streamerClient->close();
+        $this->ingestClient->close();
     }
 
     function done() {

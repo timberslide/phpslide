@@ -2,8 +2,8 @@
 
 require dirname(__FILE__).'/phpslide.php';
 
-$token = "TqPeDFG30Fz147NeCB59SUgT";
-$topic = "kris/phpslidetest";
+$token = "HM1XFUaTqPeDFG30Fz147NeC";
+$topic = "kris/example123";
 
 echo "Creating a Timberslide client\n";
 $timber = new Timberslide($topic, $token);
