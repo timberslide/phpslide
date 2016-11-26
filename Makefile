@@ -8,5 +8,7 @@ release:
 	docker run --name phpslide-build timberslide/phpslide
 	-mkdir release
 	docker cp phpslide-build:/phpslide/vendor ./release/vendor
-	docker cp phpslide-build:/phpslide/timberslide.pb.php ./release/timberslide.pb.php
 	docker cp phpslide-build:/phpslide/timberslide.php ./release/timberslide.php
+
+clean:
+	rm -rf release
