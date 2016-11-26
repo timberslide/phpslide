@@ -3,7 +3,6 @@
   "description": "Timberslide client library",
   "minimum-stability": "dev",
   "require": {
-    "grpc/grpc": "v0.15.2",
-    "google/protobuf": "v3.1.0-alpha-1"
+    "grpc/grpc": "v0.15.2"
   }
 }

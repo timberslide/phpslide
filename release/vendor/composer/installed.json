@@ -1,0 +1,96 @@
+[
+    {
+        "name": "stanley-cheung/protobuf-php",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/stanley-cheung/Protobuf-PHP.git",
+            "reference": "e15c8846bd90a2638a2017e6b6663cd195885300"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/stanley-cheung/Protobuf-PHP/zipball/e15c8846bd90a2638a2017e6b6663cd195885300",
+            "reference": "e15c8846bd90a2638a2017e6b6663cd195885300",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-07-25 22:44:12",
+        "bin": [
+            "protoc-gen-php.bat",
+            "protoc-gen-php.php"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "DrSlump": "library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Iván -DrSlump- Montes",
+                "email": "drslump@pollinimini.net",
+                "homepage": "https://github.com/drslump/Protobuf-PHP"
+            }
+        ],
+        "description": "PHP implementation of Google's Protocol Buffers",
+        "homepage": "https://github.com/stanley-cheung/Protobuf-PHP",
+        "keywords": [
+            "protobuf",
+            "protocol buffer",
+            "serializing"
+        ]
+    },
+    {
+        "name": "grpc/grpc",
+        "version": "v0.15.2",
+        "version_normalized": "0.15.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/grpc/grpc.git",
+            "reference": "15a10b7ea262a95b5c10288f67932d5ba24ac47d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/grpc/grpc/zipball/15a10b7ea262a95b5c10288f67932d5ba24ac47d",
+            "reference": "15a10b7ea262a95b5c10288f67932d5ba24ac47d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.0",
+            "stanley-cheung/protobuf-php": "dev-master"
+        },
+        "require-dev": {
+            "google/auth": "v0.9"
+        },
+        "time": "2016-07-14 06:33:26",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Grpc\\": "src/php/lib/Grpc/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "gRPC library for PHP",
+        "homepage": "http://grpc.io",
+        "keywords": [
+            "rpc"
+        ]
+    }
+]

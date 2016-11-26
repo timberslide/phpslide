@@ -1,5 +1,5 @@
 syntax = "proto3";
-option java_package = "ex.grpc";
+
 package ts;
 
 service Ingest {
