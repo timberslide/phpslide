@@ -23,8 +23,6 @@ RUN cd /tmp && git clone https://github.com/stanley-cheung/Protobuf-PHP && \
     pear install Protobuf-1.0.tgz && \
     cd /tmp && rm -r Protobuf-PHP
 
-RUN apt-get install -yq vim
-
 ADD . /phpslide
 RUN cd /phpslide && composer install
 RUN cd /phpslide && protoc -I . timberslide.proto --php_out=plugins=grpc:.
