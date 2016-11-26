@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Grpc\\' => array($vendorDir . '/grpc/grpc/src/php/lib/Grpc'),
-    'Google\\' => array($vendorDir . '/google/protobuf/php/src/Google'),
 );

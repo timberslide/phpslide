@@ -4,19 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7095b4b003f71cde763f7a8d9d139a38
+class ComposerStaticInit43d8f01db140284ace4a199564a3c811
 {
-    public static $files = array (
-        '7c623dc93c03ddd466695ebe6517b393' => __DIR__ . '/..' . '/google/protobuf/php/src/Google/Protobuf/descriptor.php',
-        '06b74932286ac92d836b3e28eabc24ef' => __DIR__ . '/..' . '/google/protobuf/php/src/Google/Protobuf/descriptor_internal.pb.php',
-        '98ed4286eec71fc8351580d3f0b2f653' => __DIR__ . '/..' . '/google/protobuf/php/src/Google/Protobuf/Internal/Type.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
         'G' => 
         array (
             'Grpc\\' => 5,
-            'Google\\' => 7,
         ),
     );
 
@@ -24,10 +17,6 @@ class ComposerStaticInit7095b4b003f71cde763f7a8d9d139a38
         'Grpc\\' => 
         array (
             0 => __DIR__ . '/..' . '/grpc/grpc/src/php/lib/Grpc',
-        ),
-        'Google\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/google/protobuf/php/src/Google',
         ),
     );
 
@@ -44,9 +33,9 @@ class ComposerStaticInit7095b4b003f71cde763f7a8d9d139a38
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7095b4b003f71cde763f7a8d9d139a38::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7095b4b003f71cde763f7a8d9d139a38::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit7095b4b003f71cde763f7a8d9d139a38::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit43d8f01db140284ace4a199564a3c811::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit43d8f01db140284ace4a199564a3c811::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit43d8f01db140284ace4a199564a3c811::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
